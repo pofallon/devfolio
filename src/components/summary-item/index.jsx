@@ -7,7 +7,7 @@ const classes = {
   description: 'text-md text-gray-600 font-light',
 };
 
-const SummaryItem = ({ name, description, link = false, internal = false }) => {
+const SummaryItem = ({ name, description, link = false, year, internal = false }) => {
   let linkContent;
   if (internal) {
     linkContent = <Link to={link}>{name}</Link>;
@@ -17,12 +17,14 @@ const SummaryItem = ({ name, description, link = false, internal = false }) => {
 
   return (
     <div className={classes.wrapper}>
-      <h3
-        className={`${classes.name} ${
+      <h3>
+        <span className={`${classes.name} ${
           link ? 'hover:underline hover:text-black' : ''
         }`}
       >
         {link ? linkContent : name}
+      </span>
+      { year ? <span> ({year})</span> : ''}
       </h3>
       <p className={classes.description}>{description}</p>
     </div>

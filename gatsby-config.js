@@ -1,77 +1,115 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://get2know.io`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: `Paul O'Fallon`,
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Paul O'Fallon | Lifelong Learner`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `Passionate about technology and teaching it to others.`,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
+    author: `@paulofallon`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    github: `https://github.com/pofallon`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/paulofallon/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `Paul has more than 25 years experience in the Information Technology industry spanning academic, start-up and enterprise environments. As Associate Vice President, Architecture at <a class="hover:underline hover:text-black"href="https://www.coxautoinc.com/">Cox Automotive</a>, he currently leads a team of architects providing strategic direction and implementation guidance to the organization. As a <a class="hover:underline hover:text-black" href="https://www.pluralsight.com">Pluralsight<a> course author, Paul has delivered training across a broad spectrum of technologies, including node.js, Apache Cassandra and Java API development.`,
+    courses: [
+      {
+        name: 'Cassandra for Developers',
+        description: `This course is designed to familiarize you with Cassandra's resilient, distributed architecture while equipping you with a thorough understanding of the Cassandra Query Language (CQL).`,
+        link: 'https://www.pluralsight.com/courses/cassandra-developers',
+        year: 2020
+      },
+      {
+        name: 'Node.js: The Big Picture',
+        description: 'Curious if Node.js is right for you? In this course we look at how Node is commonly used, examine its asynchronous development model, explore leveraging the npm module ecosystem, and assemble a set of tools to help get you started on your journey!',
+        link: 'https://www.pluralsight.com/courses/nodejs-big-picture',
+        year: 2019
+      },
+      {
+        name: 'Building Command Line Applications in Node.js',
+        description: 'Most of us use command line applications in our jobs every day. This course will introduce you to the basics of building a CLI in Node.js, including managing configuration, interacting with the user, and distributing your finished product.',
+        link: 'https://www.pluralsight.com/courses/node-js-building-command-line-app',
+        year: 2018
+      },
+      {
+        name: 'Building Asynchronous RESTful Services With Jersey',
+        description: 'In this course, we explore writing asynchronous services, as well as many other features found in Jersey. We also cover dependency injection, exception mapping, filters, Grizzly, Jackson, JerseyTest, and more.',
+        link: 'https://www.pluralsight.com/courses/build-asynchronous-restful-services-jersey',
+        year: 2014
+      }
+    ],
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'twttr',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'A minimal Twitter API client',
+        link: 'https://github.com/pofallon/twttr',
       },
       {
-        name: 'ChromeExtensionKit',
+        name: 'cdk-twitter-activity',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
+          'An AWS CDK construct to publish Twitter activity to AWS EventBridge',
+        link: 'https://github.com/pofallon/cdk-twitter-activity',
       },
       {
-        name: 'Another Cool Project',
+        name: 'gatsby-transformer-playlists',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'A Gatsby plugin that leverages the YouTube API to add nodes for playlist and video information.',
+        link: 'https://github.com/pofallon/gatsby-transformer-playlists',
       },
+      {
+        name: 'vscode-phantypist',
+        description:
+          'An extension for Visual Studio Code that will slowly paste text from the clipboard, as if someone is typing.',
+        link: 'https://github.com/pofallon/vscode-phantypist'
+      },
+      {
+        name: 'jersey2-akka-java',
+        description:
+          'An example asynchronous REST API written in Java using Jersey 2 and Akka',
+        link: 'https://github.com/pofallon/jersey2-akka-java'
+      }
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
-    experience: [
-      {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-    ],
+    // experience: [
+    //   {
+    //     name: 'Acme Corp',
+    //     description: 'Full-Stack Developer, February 2020 - Present',
+    //     link: 'https://github.com/RyanFitzgerald/devfolio',
+    //   },
+    //   {
+    //     name: 'Globex Corp',
+    //     description: 'Full-Stack Developer, December 2017 - February 2020',
+    //     link: 'https://github.com/RyanFitzgerald/devfolio',
+    //   },
+    //   {
+    //     name: 'Hooli',
+    //     description: 'Full-Stack Developer, May 2015 - December 2017',
+    //     link: 'https://github.com/RyanFitzgerald/devfolio',
+    //   },
+    // ],
     // Optional: List your skills, they must have `name` and `description`.
-    skills: [
-      {
-        name: 'Languages & Frameworks',
-        description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
-      },
-      {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
-      },
-      {
-        name: 'Other',
-        description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
-      },
-    ],
+    // skills: [
+    //   {
+    //     name: 'Languages & Frameworks',
+    //     description:
+    //       'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+    //   },
+    //   {
+    //     name: 'Databases',
+    //     description: 'MongoDB, PostreSQL, MySQL',
+    //   },
+    //   {
+    //     name: 'Other',
+    //     description:
+    //       'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+    //   },
+    // ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
