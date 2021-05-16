@@ -15,7 +15,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/paulofallon/`,
     // Content of the About Me section
-    about: `Paul has more than 25 years experience in the Information Technology industry spanning academic, start-up and enterprise environments. As Associate Vice President, Architecture at <a class="hover:underline hover:text-black"href="https://www.coxautoinc.com/">Cox Automotive</a>, he currently leads a team of architects providing strategic direction and implementation guidance to the organization. As a <a class="hover:underline hover:text-black" href="https://www.pluralsight.com">Pluralsight<a> course author, Paul has delivered training across a broad spectrum of technologies, including node.js, Apache Cassandra and Java API development.`,
+    about: `Paul has more than 28 years experience in the Information Technology industry spanning academic, start-up and enterprise environments. As Associate Vice President, Architecture at <a class="hover:underline hover:text-black"href="https://www.coxautoinc.com/">Cox Automotive</a>, he currently leads a team of architects providing strategic direction and implementation guidance to the organization. As a <a class="hover:underline hover:text-black" href="https://www.pluralsight.com">Pluralsight<a> course author, Paul has delivered training across a broad spectrum of technologies, including node.js, Apache Cassandra and Java API development.`,
     courses: [
       {
         name: 'Cassandra for Developers',
